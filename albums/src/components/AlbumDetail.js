@@ -2,7 +2,9 @@ import React from 'react';
 import { Text, View, Image } from 'react-native';
 import Card from './Card';
 import CardSection from './CardSection';
+import Button from './Button';
 
+// deconstruct the props.album and styles objects to make more readable
 const AlbumDetail = ({ album }) => {
 	const { 
 		title, 
@@ -35,6 +37,9 @@ const AlbumDetail = ({ album }) => {
 			</CardSection>
 			<CardSection>
 				<Image style={imageStyle} source={{ uri: image }} />
+			</CardSection>
+			<CardSection>
+				<Button />
 			</CardSection>
 		</Card>
 	);
