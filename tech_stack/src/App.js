@@ -11,7 +11,7 @@ const App = () => {
 	// Provider can only have one child
 	return (
 		<Provider store={createStore(reducers)}>
-			<View>
+			<View style={{ flex: 1 }}>
 				<Header headerText="Tech Stack" />
 				<LibraryList />
 			</View>
